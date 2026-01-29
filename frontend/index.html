@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Trust - Consultation, Design & Marketing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-home"></i>
+                <span>Real Trust</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#projects">OUR PROJECTS</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary nav-cta">CONTACT US</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Consultation, Design<br>& Marketing</h1>
+                    <p>We provide comprehensive real estate solutions tailored to your needs.</p>
+                    <a href="#contact" class="btn-primary btn-large">Get Started</a>
+                </div>
+                <div class="hero-form">
+                    <div class="form-card">
+                        <h3>Get a Free<br>Consultation</h3>
+                        <form id="heroContactForm">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                            <input type="text" name="city" placeholder="City" required>
+                            <button type="submit" class="btn-primary btn-full">Get Quick Quote</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-images">
+                    <div class="circle-img large">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400" alt="Professional">
+                    </div>
+                    <div class="circle-img small top">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300" alt="Team">
+                    </div>
+                    <div class="circle-img small bottom">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=300" alt="Happy Client">
+                    </div>
+                    <div class="accent-dot orange"></div>
+                    <div class="accent-dot blue"></div>
+                </div>
+                <div class="about-text">
+                    <span class="section-label">Not Your Average Realtor</span>
+                    <h2>Not Your Average Realtor</h2>
+                    <p>Real Trust is a full-service real estate company that will help you find your perfect property. With our experienced team and extensive network, we're committed to making your property dreams a reality.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Projects Done</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="services">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Potential ROI</h3>
+                    <p>We help you maximize your return on investment with strategic property selections and expert market analysis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Our professional design team creates stunning spaces that combine functionality with aesthetic appeal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Marketing</h3>
+                    <p>Comprehensive marketing strategies to ensure your property gets maximum visibility and attracts the right buyers.</p>
+                </div>
+            </div>
+            <div class="accent-dot blue-large"></div>
+            <div class="accent-dot orange-small"></div>
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <p class="section-subtitle">We know what buyers are looking for and suggest projects that will bring<br>buyers top dollar for the sale of their homes.</p>
+            
+            <div class="projects-grid" id="projectsContainer">
+                <!-- Projects will be loaded dynamically -->
+                <div class="loading">Loading projects...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Clients Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Happy Clients</h2>
+            
+            <div class="testimonials-grid" id="testimonialsContainer">
+                <!-- Testimonials will be loaded dynamically -->
+                <div class="loading">Loading testimonials...</div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <span class="nav-dot"></span>
+                <span class="nav-dot active"></span>
+                <span class="nav-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section (Bottom) -->
+    <section class="about-bottom">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="about-description">
+                Choose a part of the property or a set with what you will work on. Let that CONSISTENT 
+                SERVICE be your GOAL & MAKE it a priority. The first step is to communicate and identify 
+                what advantages you BRING to the client or any ISSUES they might have encountered with 
+                conventional selling or staging.
+            </p>
+            <button class="btn-secondary">LEARN MORE</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-overlay">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <h2>Learn more about our listing process, as well as our<br>additional staging and design work.</h2>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <input type="text" name="fullName" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                            <input type="text" name="city" placeholder="City" required>
+                            <button type="submit" class="btn-primary btn-full">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <ul class="footer-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <form id="newsletterForm">
+                            <input type="email" name="email" placeholder="Enter Email Address" required>
+                            <button type="submit" class="btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>All rights reserved 2023</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Success!</h3>
+            <p id="modalMessage">Your submission has been received.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
