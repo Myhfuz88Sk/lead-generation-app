@@ -1,5 +1,5 @@
 // Admin Panel JavaScript
-const API_URL = 'http://localhost:3000/api'; // Change this to your deployed backend URL
+const API_URL = 'http://127.0.0.1:5000/api'; // Flask backend URL
 
 // State Management
 let projects = [];
