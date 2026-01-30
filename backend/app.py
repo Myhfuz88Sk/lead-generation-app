@@ -283,34 +283,34 @@
 
 
 
-from flask import Flask, render_template, url_for
-import os
+# from flask import Flask, render_template, url_for
+# import os
 
-# Set paths relative to this script's location
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# # Set paths relative to this script's location
+# BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-app = Flask(
-    __name__,
-    template_folder=os.path.join(BASE_DIR, "frontend"),
-    static_folder=os.path.join(BASE_DIR, "frontend")
-)
+# app = Flask(
+#     __name__,
+#     template_folder=os.path.join(BASE_DIR, "frontend"),
+#     static_folder=os.path.join(BASE_DIR, "frontend")
+# )
 
-@app.route("/")
-def login():
-    return render_template("login.html")
+# @app.route("/")
+# def login():
+#     return render_template("login.html")
 
-@app.route("/signup.html")
-def signup():
-    return render_template("signup.html")
+# @app.route("/signup.html")
+# def signup():
+#     return render_template("signup.html")
 
-@app.route("/index.html")
-def index():
-    return render_template("index.html")
+# @app.route("/index.html")
+# def index():
+#     return render_template("index.html")
 
-@app.route("/admin.html")
-def admin():
-    return render_template("admin.html")
+# @app.route("/admin.html")
+# def admin():
+#     return render_template("admin.html")
 
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+# if __name__ == "__main__":
+#     app.run(debug=True, port=5000)
 
