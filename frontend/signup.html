@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | System Access</title>
+    <style>
+        /* Shared professional variables */
+        :root { --blue: #1a73e8; --orange: #ff9800; --navy: #0d47a1; }
+
+        body {
+            margin: 0; height: 100vh; font-family: sans-serif; display: flex; justify-content: center; align-items: center;
+            background: linear-gradient(225deg, #ffffff 50%, #f0f2f5 50%);
+            overflow: hidden;
+        }
+
+        /* Geometric accent like your image */
+        body::before {
+            content: ""; position: absolute; top: 0; right: 0; width: 300px; height: 300px;
+            background: var(--blue); clip-path: polygon(100% 0, 0 0, 100% 100%); opacity: 0.1;
+        }
+
+        .signup-card {
+            background: white; width: 450px; padding: 40px; border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-right: 8px solid var(--blue);
+            z-index: 1;
+        }
+
+        h2 { color: var(--navy); margin-top: 0; border-bottom: 2px solid var(--orange); display: inline-block; padding-bottom: 5px; }
+
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+        .full-width { grid-column: span 2; }
+        
+        label { display: block; font-size: 11px; font-weight: bold; color: #888; margin-bottom: 5px; }
+        input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+
+        .role-select { margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px; }
+
+        button {
+            width: 100%; padding: 15px; background: var(--orange); color: white; border: none;
+            border-radius: 4px; font-weight: 700; margin-top: 20px; cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover { background: var(--navy); }
+
+        /* New Sign In Link Styles */
+        .signin-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .signin-link a {
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+
+        .signin-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-card">
+        <h2>Register <span style="color: #888; font-weight: 300;">Account</span></h2>
+        <form>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Doe" required>
+                </div>
+                <div class="form-group full-width">
+                    <label>Corporate Email</label>
+                    <input type="email" placeholder="email@company.com" required>
+                </div>
+                <div class="form-group full-width">
+                    <label>Create Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+            </div>
+
+            <div class="role-select">
+                <label>System Role</label>
+                <div style="display: flex; gap: 30px; margin-top: 10px;">
+                    <label style="font-weight: 400; cursor: pointer;"><input type="radio" name="role" checked> Standard User</label>
+                    <label style="font-weight: 400; cursor: pointer;"><input type="radio" name="role"> Administrator</label>
+                </div>
+            </div>
+
+            <button type="submit">CREATE PROFILE</button>
+        </form>
+
+        <div class="signin-link">
+           Already have an account? <a href="/">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>

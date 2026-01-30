@@ -1,0 +1,311 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Corporate Portal</title>
+    <style>
+        :root {
+            --primary-blue: #1a73e8;
+            --accent-orange: #ff9800;
+            --deep-navy: #0d47a1;
+            --bg-white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Mimics the geometric background in your image */
+            background: linear-gradient(135deg, var(--bg-white) 60%, transparent 60%),
+                        linear-gradient(45deg, var(--deep-navy) 25%, var(--primary-blue) 25%, var(--primary-blue) 50%, transparent 50%);
+            background-color: #f0f2f5;
+        }
+
+        .login-container {
+            background: white;
+            width: 380px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent-orange);
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 { color: var(--deep-navy); font-weight: 700; margin-bottom: 30px; text-align: center; letter-spacing: 1px; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-size: 12px; font-weight: 600; color: #666; margin-bottom: 8px; text-transform: uppercase; }
+
+        input[type="text"], input[type="password"] {
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; font-size: 15px;
+        }
+
+        input:focus { border-color: var(--primary-blue); outline: none; box-shadow: 0 0 5px rgba(26, 115, 232, 0.2); }
+
+        .role-switch {
+            display: flex; background: #f8f9fa; padding: 5px; border-radius: 4px; margin: 20px 0; border: 1px solid #eee;
+        }
+
+        .role-switch label { flex: 1; text-align: center; padding: 10px; cursor: pointer; margin-bottom: 0; transition: 0.3s; }
+        .role-switch input { display: none; }
+        .role-switch input:checked + span { color: var(--accent-orange); font-weight: bold; }
+
+        button {
+            width: 100%; padding: 14px; background: var(--deep-navy); color: white; border: none;
+            border-radius: 4px; font-weight: bold; cursor: pointer; transition: 0.3s;
+        }
+
+        button:hover { background: var(--accent-orange); }
+
+        .footer { text-align: center; margin-top: 20px; font-size: 14px; }
+        .footer a { color: var(--primary-blue); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>PORTAL LOGIN</h2>
+        <form>
+            <div class="form-group">
+                <label>User Identity</label>
+                <input type="text" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label>Access Key</label>
+                <input type="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="role-switch">
+                <label><input type="radio" name="role" value="user" checked> <span>User Account</span></label>
+                <label><input type="radio" name="role" value="admin"> <span>Administrator</span></label>
+            </div>
+
+            <button type="submit">AUTHENTICATE</button>
+        </form>
+        <div class="footer">
+            New to portal? <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Corporate Portal</title>
+    <style>
+        :root {
+            --primary-blue: #1a73e8;
+            --accent-orange: #ff9800;
+            --deep-navy: #0d47a1;
+            --bg-white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-white) 60%, transparent 60%),
+                        linear-gradient(45deg, var(--deep-navy) 25%, var(--primary-blue) 25%, var(--primary-blue) 50%, transparent 50%);
+            background-color: #f0f2f5;
+        }
+
+        .login-container {
+            background: white;
+            width: 380px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent-orange);
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 { 
+            color: var(--deep-navy); 
+            font-weight: 700; 
+            margin-bottom: 30px; 
+            text-align: center; 
+            letter-spacing: 1px; 
+        }
+
+        .form-group { margin-bottom: 20px; }
+        
+        label { 
+            display: block; 
+            font-size: 12px; 
+            font-weight: 600; 
+            color: #666; 
+            margin-bottom: 8px; 
+            text-transform: uppercase; 
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            font-size: 15px;
+        }
+
+        input:focus { 
+            border-color: var(--primary-blue); 
+            outline: none; 
+            box-shadow: 0 0 5px rgba(26, 115, 232, 0.2); 
+        }
+
+        .role-switch {
+            display: flex; 
+            background: #f8f9fa; 
+            padding: 5px; 
+            border-radius: 4px; 
+            margin: 20px 0; 
+            border: 1px solid #eee;
+        }
+
+        .role-switch label { 
+            flex: 1; 
+            text-align: center; 
+            padding: 10px; 
+            cursor: pointer; 
+            margin-bottom: 0; 
+            transition: 0.3s; 
+        }
+        
+        .role-switch input { display: none; }
+        
+        .role-switch input:checked + span { 
+            color: var(--accent-orange); 
+            font-weight: bold; 
+        }
+
+        button {
+            width: 100%; 
+            padding: 14px; 
+            background: var(--deep-navy); 
+            color: white; 
+            border: none;
+            border-radius: 4px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: 0.3s;
+        }
+
+        button:hover { background: var(--accent-orange); }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+
+        .footer { 
+            text-align: center; 
+            margin-top: 20px; 
+            font-size: 14px; 
+        }
+        
+        .footer a { 
+            color: var(--primary-blue); 
+            text-decoration: none; 
+        }
+
+        .footer a:hover { text-decoration: underline; }
+
+        .alert {
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .alert.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+
+        .alert.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>PORTAL LOGIN</h2>
+        
+        <div id="alert" class="alert"></div>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label>User Identity</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Access Key</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="role-switch">
+                <label>
+                    <input type="radio" name="role" value="user" checked> 
+                    <span>User Account</span>
+                </label>
+                <label>
+                    <input type="radio" name="role" value="admin"> 
+                    <span>Administrator</span>
+                </label>
+            </div>
+
+            <button type="submit" id="loginBtn"><a href="index.html">AUTHENTICATE</a></button>
+        </form>
+        
+        <div class="footer">
+            New to portal? <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
